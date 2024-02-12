@@ -1,0 +1,105 @@
+body {
+    background-color: F3EBE4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: [Montserrat](https://fonts.google.com/specimen/Montserrat),[Fraunces](https://fonts.google.com/specimen/Fraunces);
+}
+
+.container {
+    display: flex;
+    width: 80%; 
+    max-width: 1440px; 
+    
+}
+
+img {
+    height: 400px; 
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+   
+}
+
+.img1 {
+    display: flex;
+    padding: 5px;
+    margin-top: 200px;
+    
+    
+}
+
+.side {
+    
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    margin-top: 180px;
+   
+   
+    
+}
+
+.side h3, h1, p {
+    width: 30%;
+}
+
+h3, p {
+    color: grey;
+    font-size: 14px;
+}
+
+.btn button {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%; 
+    border: none;
+    margin-top: 10px; 
+    cursor: pointer;
+}
+i{
+    margin-right: 20px;
+}
+
+.btn h2 {
+    color: teal;
+    font-size: 30px;
+}
+
+.btn span {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+@media (max-width: 767px) { 
+    .container {
+        flex-direction: column;
+    }
+
+    .img1 {
+        order: 1; 
+    }
+
+    .side {
+        order: 2; 
+        border-radius: 10px 10px 0 0; 
+        margin-top: auto;
+        width: 375px;
+        
+        
+    }
+    .side h3, h1, p {
+        width: 50%;
+    }
+
+    img {
+        border-radius: 10px 10px 0 0; 
+        height: 300px;
+    }
+   .side button{
+        width: 50%;
+    }
+}
